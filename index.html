@@ -1,0 +1,1930 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visio</title>
+  <link rel="stylesheet" href="./css/bootstrap-grid.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yesteryear&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="https://seomybusiness.in/visio/wp-content/uploads/2023/04/cropped-favicon-32x32.png"
+    sizes="32x32">
+  <link rel="stylesheet" href="./css/ekiticons.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+
+    .all-center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #top {
+      height: 144px;
+      background-color: rgb(33, 47, 63);
+      position: fixed;
+      /* padding: 10px; */
+      z-index: 3;
+    }
+
+    #top .row {
+      height: 100%;
+    }
+
+    #top .col {
+      height: 50%;
+    }
+
+    #top .col>div:first-child {
+      height: 100%;
+    }
+
+    #top-line1,
+    #top-line2 {
+      padding: 10px;
+    }
+
+    .telephone {
+      color: #fff;
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .red-phone {
+      width: 22px;
+      height: 22px;
+      background: #ff494a;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .phone-icon {
+      display: inline-block;
+      font-size: 12px;
+      color: #fff;
+    }
+
+    .bar-icon {
+      width: 45px;
+      height: 33px;
+      padding: 10px;
+      text-align: center;
+      color: #000;
+      background: #fff;
+      cursor: pointer;
+    }
+
+    #menu {
+      color: #fff;
+      display: none;
+    }
+
+    #menu .col {
+      height: 24px;
+    }
+
+    .section1 {
+      width: 100%;
+      height: 550px;
+      background: linear-gradient(rgba(33, 47, 63, 0.8), rgba(33, 47, 63, 0.8)), url(./images/Main-hero.jpg) no-repeat center/cover;
+      padding: 10px 1rem;
+      font-family: 'Roboto', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .section1-content {
+      width: 100%;
+      height: 240px;
+    }
+
+    .section1-content-line1 {
+      width: 100%;
+      height: 24px;
+      font-size: 14px;
+      color: #fff;
+    }
+
+    .section1-content-line2 {
+      width: 100%;
+      height: 68px;
+      font-size: 68px;
+      color: #fff;
+      letter-spacing: 20px;
+    }
+
+    .section1-content-line3 {
+      width: 100%;
+      height: 20px;
+      color: #fff;
+    }
+
+    .section1-content-line4 {
+      width: 100%;
+      height: 48px;
+    }
+
+    .section1-content-line4 a {
+      background: #ff494a;
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 40px;
+      cursor: pointer;
+    }
+
+    .section2 {
+      width: 100%;
+      background: #ECF0F4;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .section2 .box {
+      height: 190px !important;
+      padding: 60px 50px;
+      justify-content: center;
+    }
+
+    .section2 .box>div:last-child {
+      width: 265px;
+    }
+
+    .section2 .col>div {
+      height: 100%;
+    }
+
+    .section2 img {
+      width: 51px;
+    }
+
+    .box-header,
+    .box-body {
+      position: relative;
+      z-index: 2;
+    }
+
+    .box-body h3 {
+      font-size: 14px;
+      color: #73787d;
+      margin: 0px 0px 0px 5px;
+    }
+
+    .box-body p {
+      font-size: 16px;
+      color: #1d2f41;
+      margin: 5px;
+    }
+
+    .section3 {
+      width: 100%;
+      /* height: 878px; */
+      padding: 100px 0;
+      position: relative;
+    }
+
+    .section3 .col>div {
+      height: 100%;
+    }
+
+    .badge {
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: 0%;
+      left: 25%;
+    }
+
+    .about img {
+      width: 355px;
+      height: 245px;
+    }
+
+    .check-icon {
+      width: 56px;
+      height: 56px;
+      background: #ff494a;
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .icon-box-title {
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 30px;
+      color: rgb(29, 47, 65);
+      font-style: normal;
+      letter-spacing: normal;
+    }
+
+    .section3 p {
+      color: #73787d;
+      font-size: 16px;
+    }
+
+    .section3 h2 {
+      font-size: 35px;
+      color: #1d2f41;
+    }
+
+    .about-visio {
+      color: #ff494a;
+      /* display: block;
+      margin-bottom: 1rem !important; */
+    }
+
+    .explore-now-a {
+      background: #ff494a;
+      color: #fff;
+      width: 162px;
+      height: 42px;
+      border-radius: 4px;
+      display: block;
+      padding: 15px 40px;
+      cursor: pointer;
+      text-decoration: none;
+      margin: auto;
+    }
+
+    .explore-now-span {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 12px;
+      display: block;
+    }
+
+    .telephone-2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #1d2f41;
+      line-height: 27px;
+    }
+
+    .section4 {
+      /* height: 1700px;
+      padding: 100px 20px 20px 20px; */
+      background-color: #FBFBFB;
+    }
+
+    .section4 .row {
+      width: 100%;
+      height: 1700.2px;
+      margin: auto;
+      /* padding: 100px 0; */
+    }
+
+    .section4 .col-12:nth-child(3),
+    .section4 .col-12:nth-child(4),
+    .section4 .col-12:nth-child(5),
+    .section4 .col-12:nth-child(6),
+    .section4 .col-12:nth-child(7),
+    .section4 .col-12:nth-child(8) {
+      /* width: 330px; */
+      /* height: 190px; */
+      padding: 15px 0px;
+    }
+
+    .box-shadow {
+      box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 10px -10px;
+    }
+
+    .section4 img {
+      height: 90px;
+      width: 90px;
+    }
+
+    .section4 h3 {
+      margin-bottom: 5px;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .text-center {
+      text-align: center;
+      /* height: 160px; */
+    }
+
+    .color-gray {
+      color: #73787d;
+    }
+
+    .rate {
+      font-size: 13px;
+      color: #73787d;
+      background: #ecf0f4;
+      width: 330px;
+      height: 96.2px;
+      padding: 10px 50px;
+      line-height: 2em;
+      letter-spacing: 0.1em;
+      font-weight: 500;
+      margin-bottom: 25px;
+    }
+
+    .img-margin {
+      margin-top: 20px;
+    }
+
+    .countryWeSup {
+      font-size: 35px;
+      color: #1d2f41;
+      font-weight: 700;
+      height: 70px;
+    }
+
+    /* section5 CSS */
+
+    .section5 {
+      width: 100%;
+      height: 573px;
+      background: linear-gradient(rgba(33, 47, 63, 0.8), rgba(33, 47, 63, 0.8)), url(./images/cta-bg.jpg) no-repeat center/cover;
+      padding-top: 100px;
+    }
+
+    .S5-1 {
+      padding: 10px;
+
+    }
+
+    .S5-2 {
+      padding: 10px;
+
+    }
+
+    .S5-1-top {
+      color: #fff;
+      font-size: 35px;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .S5-1-bot {
+      width: 160.88px;
+      height: 48px;
+      color: #1d2f41;
+      font-size: 12px;
+      line-height: 24px;
+      background: #fff;
+      padding: 15px 40px;
+      border-radius: 4px;
+      margin: auto;
+    }
+
+
+    .S5-2 .play-btn {
+      width: 70px;
+      height: 70px;
+      background: #ff494a;
+      border-radius: 50%;
+      text-align: center;
+      margin: auto;
+    }
+
+    .S5-2 .play-icon {
+      color: #fff;
+      font-size: 24px;
+      line-height: 70px;
+    }
+
+    .S5-2 .textPlayVideo {
+      color: #fff;
+      font-size: 30px;
+      font-weight: 500;
+      font-family: "Yesteryear", Sans-serif !important;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .S5-2 .watchTrainVideo {
+      color: #fff;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    /* section6 */
+    .section6 {
+      width: 100%;
+      /* height: 1595px; */
+      padding: 100px 0;
+    }
+
+    .whatWeOffer {
+      color: #ff494a;
+      height: 24px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .whatWeOfferInfo {
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 1;
+      text-align: center;
+      color: #1d2f41;
+      margin-bottom: 60px;
+    }
+
+    .section6 .col-12 {
+      margin-bottom: 20px !important;
+    }
+
+    .PhotoContainer {
+      text-align: center;
+      width: 355px;
+      height: 279px;
+    }
+
+    .section6Photo-1 {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: linear-gradient(rgba(33, 47, 63, 0.5), rgba(33, 47, 63, 0.7)), url(./images/student-visa.jpg) no-repeat center/cover;
+      padding-left: 20px;
+      padding-top: 239px;
+    }
+
+    .section6Photo-2 {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: linear-gradient(rgba(33, 47, 63, 0.5), rgba(33, 47, 63, 0.7)), url(./images/family-visa.jpg) no-repeat center/cover;
+      padding-left: 20px;
+      padding-top: 239px;
+    }
+
+    .section6Photo-3 {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: linear-gradient(rgba(33, 47, 63, 0.5), rgba(33, 47, 63, 0.7)), url(./images/Tourist-visa.jpg) no-repeat center/cover;
+      padding-left: 20px;
+      padding-top: 239px;
+    }
+
+    .section6Photo-4 {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background: linear-gradient(rgba(33, 47, 63, 0.5), rgba(33, 47, 63, 0.7)), url(./images/resident-visa.jpg) no-repeat center/cover;
+      padding-left: 20px;
+      padding-top: 239px;
+    }
+
+    .section6 .col-12 {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .section6 .photoText {
+      color: #fff;
+      text-align: left !important;
+      font-size: 20px;
+      line-height: 1.2;
+      --widgets-spacing: 20px;
+      font-weight: bolder;
+    }
+
+    .section7 {
+      margin-top: 100px;
+      position: relative;
+      background: #fff;
+    }
+
+    .section7_title {
+      text-align: center;
+      /* width: 100px; */
+    }
+
+    .section7 .whyChooseUs {
+      color: #ff494a;
+      --widgets-spacing: 20px;
+      font-weight: 500;
+      /* font-size: 18px; */
+    }
+
+    .section7 .BestImmigration {
+      font-size: 35px;
+      color: #1d2f41;
+      font-weight: 600;
+      padding: 15px 30px;
+    }
+
+    .section7 .smallWords {
+      color: #73787d;
+      line-height: 1.5rem;
+      padding: 0 10px;
+      margin-bottom: 15px;
+      -webkit-font-smoothing: antialiased;
+      background: #fff;
+    }
+
+    .section7_check {
+      margin-left: 30px;
+      background: #fff;
+    }
+
+    .section7 .check-icon2 {
+      color: #ff494a;
+      font-weight: 900;
+      font-size: 25px;
+      /* display: block; */
+    }
+
+    .section7 .check-words {
+      color: #1d2f41;
+      padding: 0, 0, 0, 15px;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 25px;
+      display: block;
+      margin-left: 10px;
+    }
+
+    .section7 .row:nth-child(2) {
+      margin-bottom: 30px;
+    }
+
+    .section7 .col-12 {
+      margin-bottom: 10px;
+    }
+
+    .section7-container:nth-child(2) {
+      margin-top: 30px;
+    }
+
+    .section7-img {
+      width: 95vw;
+      margin: auto;
+      display: block;
+      box-shadow: 10px 5px 1px #ff494a;
+    }
+
+    .section7 .explore-now {
+      padding: 40px 40px 40px 0;
+      background: #fff;
+    }
+
+    .section7 .workdays {
+      width: 270.6px;
+      height: 309px;
+      border-width: 5px 0 0 0;
+      border-color: #ff494a;
+      border-style: solid;
+      background: #fff;
+      margin: auto;
+      padding: 50px 80px;
+      position: absolute;
+      top: 286px;
+      left: 114px;
+      box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+      z-index: -3;
+    }
+
+    .section7 .icon-Profile {
+      font-size: 50px;
+      color: #ff494a;
+    }
+
+    .section7 .workdays-numbers {
+      color: #1d2f41;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .section7 .workdays-text {
+      color: #73787d;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .section7 .explore-btn {
+      width: 161px;
+      height: 48px;
+      background: #ff494a;
+      border-radius: 4px;
+      text-align: center;
+      margin: auto;
+    }
+
+    .section7 .explore-btn a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 12px;
+      line-height: 48px;
+    }
+
+    /* section8 red area*/
+    .section8 {
+      margin-top: 200px;
+    }
+
+    .section8 .col-12:first-child {
+      background: #ff494acf;
+      height: 732px;
+    }
+
+    .section8 .col-12:nth-child(2) {
+      background: #1d2f41;
+      height: 732px;
+    }
+
+    .section8 .col-4 img {
+      width: 85px;
+      height: 85px;
+    }
+
+    .section8 .red-item {
+      padding: 10px;
+      margin-top: 50px;
+    }
+
+    .section8 .little-title {
+      color: #fff;
+      font-size: 20px;
+      margin-top: 8px;
+      font-weight: bold;
+    }
+
+    .section8 .little-words {
+      color: #fff;
+      margin-top: 8px;
+      line-height: 24px;
+    }
+
+    /* section8 blue area */
+    .section8-words {
+      text-align: center;
+      padding: 95px 50px 40px 50px;
+    }
+
+    .blue-area {
+      position: relative;
+    }
+
+    .gray-words {
+      color: #73787d;
+      margin-bottom: 20px;
+    }
+
+    .giant-words {
+      color: #fff;
+      font-size: 35px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .medium-words {
+      color: #fff;
+      line-height: 24px;
+      margin-bottom: 20px;
+    }
+
+    .section8-img img {
+      width: 65vw;
+      display: block;
+      margin: auto;
+    }
+
+    .blue-passport img {
+      width: 65px;
+      height: 65px;
+      position: absolute;
+      left: 50%;
+      top: 81%;
+    }
+
+    /* section9 */
+    .section9 {
+      height: 936px;
+      padding: 150px 10px 450px 10px;
+    }
+
+    .section9 .card-container {
+      width: 80%;
+      margin: auto;
+      padding: 10px 0;
+      position: relative;
+    }
+
+    .section9 .card-container:nth-child(2) {
+      display: none;
+    }
+
+    .section9 .card-container:nth-child(3) {
+      display: none;
+    }
+
+    .card-img {
+      width: 100%;
+    }
+
+    .card-img img {
+      width: 100%;
+      /* height: 175px; */
+      margin: 0;
+      vertical-align: middle;
+    }
+
+    .card-title {
+      font-size: 24px;
+      color: #1d2f41;
+      font-weight: bolder;
+      line-height: 36px;
+    }
+
+    .card-text {
+      color: #73787d;
+      line-height: 24px;
+    }
+
+    .card-btn {
+      width: 133px;
+      height: 42px;
+      background: #ff494a;
+      padding: 15px 30px;
+      border-radius: 5px;
+    }
+
+    .card-btn a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 12px;
+      line-height: 24px;
+    }
+
+    .card-info {
+      width: 100%;
+      height: 286px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0 0 10px;
+      padding: 30px 40px;
+      position: absolute;
+      top: 91%;
+      left: 0;
+    }
+
+    /* section10 */
+    .section10 {
+      margin-top: 200px;
+    }
+
+    .four-steps {
+      padding-bottom: 50px;
+    }
+
+    .four-steps .col-12 {
+      border: 1px solid #1d2f41;
+      border-radius: 85px;
+      width: 85%;
+      height: 313px;
+      margin: 10px auto;
+    }
+
+    .section10 .step {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+      margin: 10px auto;
+      position: relative;
+      padding: 50px 35px;
+    }
+
+    .step-circle {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #1d2f41;
+      color: #fff;
+      text-align: center;
+      line-height: 36px;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .step-title {
+      font-size: 20px;
+      color: #1d2f41;
+      font-weight: bold;
+    }
+
+    .step-text {
+      color: #73787d;
+      line-height: 24px;
+    }
+
+    .step-icon img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+    }
+
+    /* section11 */
+    .section11 {
+      width: 100%;
+      height: 1035px;
+      background-color: rgb(236, 239, 244);
+      background-image: url(./images/pattern-9.jpg);
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    .OurTerminal {
+      color: #ff494a;
+      height: 24px;
+      font-weight: 500;
+      line-height: 24px;
+      text-align: center;
+      margin-bottom: 30px;
+      margin-top: 115px;
+    }
+
+    .whatTheyTalk {
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 1;
+      text-align: center;
+      color: #1d2f41;
+      margin-bottom: 30px;
+    }
+
+    .section11 .whatWeOfferText {
+      line-height: 24px;
+      color: #73787d;
+      text-align: center;
+      margin-bottom: 90px;
+    }
+
+    .rate-card {
+      width: 90%;
+      height: 382px;
+      background: #fff;
+      margin: auto;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 10px 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 30px 30px 50px 30px;
+      position: relative;
+    }
+
+    .rate-card:last-child {
+      display: none;
+    }
+
+    .client-img img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      position: absolute;
+      top: 96%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .client-name {
+      font-size: 20px;
+      color: #1d2f41;
+      font-weight: bold;
+      position: absolute;
+      top: 115%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .comma-icon {
+      color: #1d2f41;
+      font-size: 48px;
+    }
+
+    .comma-text {
+      line-height: 24px;
+      color: #73787d;
+      text-align: center;
+    }
+
+    .star {
+      font-size: 15px;
+      color: #ff494a;
+      text-align: center;
+    }
+
+    .star-icon {
+      margin-right: 5px;
+    }
+
+    /* footer */
+    .footer {
+      width: 100%;
+      height: 1500px;
+      background: #1d2f41;
+      -webkit-font-smoothing: antialiased;
+      padding: 100px 40px;
+    }
+
+    .footer-title {
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 20px;
+    }
+
+    .footer-item {
+      color: #fff;
+      line-height: 24px;
+      margin-top: 25px;
+    }
+
+    .icon-background {
+      width: 28px;
+      height: 28px;
+      background: #ff494a;
+      border-radius: 50%;
+      text-align: center;
+      margin-bottom: 15px;
+      margin-top: 24px;
+    }
+
+    .icon-self {
+      color: #fff;
+      line-height: 28px;
+    }
+
+    .information {
+      color: #fff;
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: 500;
+    }
+
+    .horizon {
+      border-color: #fff;
+      width: 100%;
+    }
+
+    .copy-right {
+      color: #fff;
+      font-size: 17px;
+      font-weight: 500;
+    }
+
+    .media-icons {}
+
+    .media-icons-bg {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: #73787d;
+      text-align: center;
+    }
+
+    .media-icons-bg i {
+      font-size: 16px;
+      line-height: 32px;
+      color: #fff;
+    }
+
+    @media(min-width:768px) {
+      #top .col:first-child>div {
+        width: 148px;
+      }
+
+      #top {
+        height: 73px;
+      }
+
+      .section2 .box:not(#box3) {
+        border-right: 1px solid #73787D36;
+      }
+
+      .section2 .box:not(#box3):hover {
+        border-right: 0px solid #73787D36;
+      }
+
+      .section3-left {
+        justify-content: center;
+      }
+
+      .section3 .badge {
+        position: absolute;
+        left: 25%;
+        top: 25%;
+      }
+
+      .section3-right-1 {
+        text-align: start;
+      }
+
+      .section3 .the-best {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 110px;
+        font-weight: 400;
+      }
+
+      .section3 .the-best:nth-child(2),
+      .section3 .the-best:nth-child(3) {
+        text-align: left;
+      }
+
+      .red-check {
+        margin: 0px 15px 0px 0px;
+      }
+
+      .telephone-2 {
+        font-size: 14px;
+        width: 134px;
+        height: 42px;
+      }
+
+      .explore-now,
+      .TelePhone {
+        margin-right: 10px;
+      }
+
+      .object-fit {
+        object-fit: cover !important;
+        width: 100% !important;
+        height: 100% !important;
+      }
+
+      .text-left {
+        text-align: left;
+      }
+
+      .section4 .row {
+        flex-direction: row;
+        justify-content: center;
+        height: 746px;
+        padding: 100px 0px;
+      }
+
+      .section4 .col-12:nth-child(3),
+      .section4 .col-12:nth-child(4),
+      .section4 .col-12:nth-child(5),
+      .section4 .col-12:nth-child(6),
+      .section4 .col-12:nth-child(7),
+      .section4 .col-12:nth-child(8) {
+        padding: 0px 15px;
+      }
+
+      .section4 img {
+        height: 48.08px;
+        width: 48.08px;
+      }
+
+      .img-margin {
+        margin-right: 15px;
+        margin-top: 0px;
+      }
+
+      .rate {
+        width: 710px;
+        height: 46.2px;
+        margin: auto;
+      }
+
+      /* section5 */
+      .section5 {
+        height: 373px;
+      }
+
+      .S5-1-top {
+        text-align: left;
+      }
+
+      .S5-1-bot {
+        margin-left: 0;
+      }
+
+      /* section6 */
+
+      .PhotoContainer {
+        width: 185px;
+      }
+
+      .section6 .row {
+        padding: 0 10px;
+      }
+
+      /* section7 */
+
+      .section7_title {
+        text-align: left !important;
+      }
+
+      .section7-img {
+        width: 45vw;
+        align-items: center;
+        padding-left: 20px !important;
+        margin-left: 20px !important;
+      }
+
+      .section7 .explore-now-a {
+        text-align: left;
+      }
+
+      .section7 .BestImmigration,
+      .section7 .smallWords {
+        padding: 0;
+      }
+
+      .section7 .explore-btn {
+        margin-left: 10px;
+      }
+
+      .section7 .workdays {
+        top: 200px;
+        left: 350px;
+        z-index: 2;
+      }
+
+      /* section8 */
+      .section8-words {
+        text-align: left;
+      }
+
+      .blue-passport img {
+        width: 65px;
+        height: 65px;
+        position: absolute;
+        left: 73%;
+        top: 56%;
+      }
+
+      .section8-img img {
+        width: 45vw;
+      }
+
+      /* section9 */
+      .section9 {
+        padding: 150px 10px 500px 10px;
+      }
+
+      .section9 .card-container:nth-child(2) {
+        display: block;
+      }
+
+      .section9 .card-container {
+        width: 40%;
+      }
+
+      /* section10 */
+      .four-steps .col-12 {
+        border: 2px solid #1d2f41;
+      }
+
+      /* section11 */
+      .section11 {
+        height: 670px;
+      }
+
+      .OurTerminal {
+        text-align: left;
+      }
+
+      .whatTheyTalk {
+        text-align: left;
+      }
+
+      .whatWeOfferText {
+        text-align: left !important;
+      }
+
+      .rate-card {
+        width: 31%;
+      }
+
+      .rate-card:last-child {
+        display: block;
+      }
+
+      /* footer */
+      .footer {
+        height: 600px;
+      }
+
+      .icon-background {
+        width: 22px;
+        height: 22px;
+        background: #ff494a;
+        border-radius: 50%;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 24px;
+        margin-right: 10px;
+      }
+
+      .icon-self {
+        color: #fff;
+        line-height: 22px;
+        font-size: 12px;
+      }
+
+      .information {
+        color: #fff;
+        font-size: 13px;
+        line-height: 73px;
+        /* font-weight: 500; */
+      }
+    }
+
+    @media (min-width:992px) {
+      #menu {
+        display: block;
+      }
+
+      .fa-bars {
+        display: none;
+      }
+
+      .about img {
+        width: 700px;
+        height: 483.7px;
+      }
+
+      .section3 .badge {
+        top: 13%;
+        left: 13%;
+      }
+
+      .countryWeSup {
+        font-size: 45px;
+        height: 90px;
+      }
+
+      .section4 img {
+        width: 20%;
+        height: 20%;
+      }
+
+      .section4 h3 {
+        margin-bottom: 10px;
+      }
+
+      .rate {
+        font-size: 14px;
+      }
+
+      /* section6 */
+      .PhotoContainer {
+        width: 272.5px !important;
+      }
+
+      .section6 .row {
+        padding: 0 150px;
+        justify-content: center;
+      }
+
+      /* section7 */
+      .section7 .workdays {
+        top: 335px;
+        left: 685px;
+      }
+
+      /* section9 */
+      .section9 .card-container {
+        width: 25%;
+      }
+
+      .section9 .card-container:nth-child(3) {
+        display: block;
+      }
+
+      /* section10 */
+      .section10 .row {
+        justify-content: center;
+      }
+
+      .four-steps .col-12 {
+        width: 20%;
+        margin: 5px 10px;
+      }
+
+      /* section11 */
+      .section11 {
+        padding: 75px 150px;
+      }
+
+      /* footer */
+      .fooer {
+        height: 489px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="top" class="container-fluid">
+    <div class="row d-flex flex-column flex-md-row align-items-md-center">
+      <div class="col col-md-2">
+        <div class="d-flex justify-content-center align-items-center">
+          <img class="d-block" style="height: 33px;" src="./images/LogoMakr-4G83ai.png">
+        </div>
+      </div>
+
+      <div class="col-lg-6 offset-lg-2" id="menu">
+        <div class="row">
+          <div class="col-auto">Home</div>
+          <div class="col-auto">Pages<i class="fa-solid fa-chevron-down"></i></div>
+          <div class="col-auto">Country<i class="fa-solid fa-chevron-down"></i></div>
+          <div class="col-auto">Team<i class="fa-solid fa-chevron-down"></i></div>
+          <div class="col-auto">Visa<i class="fa-solid fa-chevron-down"></i></div>
+          <div class="col-auto">Coaching<i class="fa-solid fa-chevron-down"></i></div>
+          <div class="col-auto">Contact<i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+      </div>
+
+      <div class="col col-md-2 offset-md-8 offset-lg-0">
+        <div class=" d-flex justify-content-between align-items-center flex-md-row-reverse justify-content-md-start">
+          <div class="d-flex flex-column flex-md-row align-items-center">
+            <span class="red-phone">
+              <i class="fa-solid fa-phone-flip phone-icon"></i>
+            </span>
+            <p class="telephone" style="width: 120px">+1-202-555-0170</p>
+          </div>
+          <div class="me-md-3">
+            <i class="fa-solid fa-bars bar-icon"></i>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section1 d-flex justify-content-center align-items-center container-fluid">
+    <div class="section1-content d-flex flex-column justify-content-around">
+      <div class="section1-content-line1 d-flex align-items-center">UNLOCKING YOUR GLOBAL OPPORTUNITIES</div>
+      <div class="section1-content-line2 d-flex align-items-center">EXPERT</div>
+      <div class="section1-content-line3 d-flex align-items-center">Visa & Immigration Consultancy</div>
+      <div class="section1-content-line4 d-flex align-items-center"><a href="">EXPLORE NOW</a></div>
+    </div>
+  </div>
+
+  <div class="section2 container-fluid">
+    <div class="row d-flex flex-column flex-md-row">
+      <div class="col col-md-4">
+        <div class="box d-flex">
+          <div class="box-header">
+            <img src="./images/passport.png">
+          </div>
+          <div class="box-body d-flex flex-column justify-content-center">
+            <h3>Apply Online Visa</h3>
+            <p>Immigration Process Responsibility</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-md-4">
+        <div class="box d-flex">
+          <div class="box-header">
+            <img src="./images/human.png">
+          </div>
+          <div class="box-body d-flex flex-column justify-content-center">
+            <h3>Apply Online Visa</h3>
+            <p>Quick & Easy Visa Application</p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-md-4">
+        <div class="box d-flex" id="box3">
+          <div class="box-header">
+            <img src="./images/trustworthy.png">
+          </div>
+          <div class="box-body d-flex flex-column justify-content-center">
+            <h3>Apply Online Visa</h3>
+            <p>Skilled & Professional Consultants</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section3 container">
+    <div class="row">
+      <div class="col col-md-6">
+        <div class="d-flex flex-column align-items-center position-relative section3-left">
+          <div class="badge">
+            <img src="./images/badge-q5ilytkwvxhgnvu98ob1iehkynq2ji2lufgoqzvujg.png">
+          </div>
+          <div class="about" style="width: 100%;">
+            <img src="./images/about.jpg" class="object-fit">
+          </div>
+        </div>
+      </div>
+      <div class="col col-md-6">
+        <div
+          class="d-flex flex-column align-items-center justify-content-between justify-content-md-center align-items-md-start"
+          style="padding: 20px;height: 686px;text-align: center;">
+          <div class="section3-right-1">
+            <span class="about-visio d-block mb-3">ABOUT VISIO</span>
+            <h2 class="mb-3">Award Winning Visa & Immigration Firm.</h2>
+            <p style=" line-height: 24.5px;-webkit-font-smoothing: antialiased" class="mb-md-4">
+              There are many variations of passages of
+              Lorem Ipsum available, but the
+              majory have suffered alteration
+              in some form, by simply free text available in injected humour, or randomised words.</p>
+          </div>
+          <div class="the-best mb-md-4">
+            <div class="mb-3 red-check">
+              <span class="check-icon" style="margin: auto;"><i class="fa-solid fa-check"></i></span>
+            </div>
+            <div class="mb-3" style="padding-top: 5px;">
+              <span class="icon-box-title">The Best Visa Services</span>
+            </div>
+            <div>
+              <p style="-webkit-font-smoothing: antialiased;width: 280px;" class="d-block">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered.
+              </p>
+            </div>
+          </div>
+          <div class="d-flex align-self-center align-self-lg-start">
+            <div class="explore-now">
+              <a href="#" class="explore-now-a">
+                <span class="explore-now-span">EXPLORE NOW</span>
+              </a>
+            </div>
+            <div class="TelePhone d-flex flex-column flex-md-row justify-content-md-between align-items-center">
+              <span class="red-phone">
+                <i class="fa-solid fa-phone-flip phone-icon"></i>
+              </span>
+              <span class="telephone-2">+1-202-555-0170</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section4 -->
+  <div class="section4 container-fluid" style="background: #fbfbfb;">
+    <div class="row column justify-content-between align-items-center">
+      <div class="col-12">
+        <div class="text-center" style="color: #ff494a; height: 24px;font-weight: 500;">COUNTRIES WE OFFER</div>
+      </div>
+      <div class="col-12" style="padding: 0;">
+        <div class="text-center countryWeSup">
+          Countries We Support <br> for Immigration
+        </div>
+      </div>
+      <div class="col-12 col-md-4 box-shadow ">
+        <div class="d-md-flex text-center py-md-4 px-md-3">
+          <img src="./images/canada.png" class="img-margin">
+          <div class="text-left">
+            <h3 style="font-size: 20px;"> Canada</h3>
+            <p class="color-gray">Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 box-shadow">
+        <div class="d-md-flex text-center py-md-4 px-md-3">
+          <img src="./images/usa.png" class="img-margin">
+          <div class="text-left">
+            <h3 style="font-size: 20px;">United States</h3>
+            <p class="color-gray">Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 box-shadow">
+        <div class="d-md-flex text-center py-md-4 px-md-3">
+          <img src="./images/australia.png" class="img-margin">
+          <div class="text-left">
+            <h3 style="font-size: 20px;">Australia</h3>
+            <p class="color-gray">Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 box-shadow">
+        <div class="d-md-flex text-center py-md-4 px-md-3">
+          <img src="./images/australia.png" class="img-margin">
+          <div class="text-left">
+            <h3 style="font-size: 20px;">New Zealand</h3>
+            <p class="color-gray">Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 box-shadow">
+        <div class="d-md-flex text-center py-md-4 px-md-3">
+          <img src="./images/india.png" class="img-margin">
+          <div class="text-left">
+            <h3 style="font-size: 20px;">India</h3>
+            <p class="color-gray">Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 box-shadow">
+        <div class="d-md-flex text-center py-md-4 px-md-3">
+          <img src="./images/germany.png" class="img-margin">
+          <div class="text-left">
+            <h3 style="font-size: 20px;">Germany</h3>
+            <p class="color-gray">Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+      </div>
+      <div class="rate text-center">TOP RATED BY CUSTOMERS & IMMIGRATION FIRMS WITH 100% SUCCESS RATE.</div>
+    </div>
+  </div>
+  <!-- section5 -->
+  <div class="section5 container-fluid d-md-flex ">
+    <div class="S5-1 col-md-8">
+      <div class="S5-1-top">We Counselling Students <br> to Get Study Visa</div>
+      <div class="S5-1-bot">EXPLORE NOW</div>
+    </div>
+    <div class="S5-2 col-md-4">
+      <div class="play-btn"><i class="fa-regular fa-circle-play play-icon"></i></div>
+      <div class="textPlayVideo">Play Video</div>
+      <div class="watchTrainVideo">Watch Training Videos</div>
+    </div>
+  </div>
+  <!-- section6 -->
+  <div class="section6">
+    <div>
+      <div class="whatWeOffer">WHAT DO WE OFFER</div>
+      <div class="whatWeOfferInfo">
+        Outstanding Immigration<br>
+        Visa Services.
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-3 col-lg-3">
+        <div class="PhotoContainer">
+          <div class="section6Photo-1">
+            <div class="photoText">Student Visa</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3 col-lg-3">
+        <div class="PhotoContainer">
+          <div class="section6Photo-2">
+            <div class="photoText">Family Visa</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3 col-lg-3">
+        <div class="PhotoContainer">
+          <div class="section6Photo-3">
+            <div class="photoText">Tourist Visa</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3 col-lg-3">
+        <div class="PhotoContainer">
+          <div class="section6Photo-4">
+            <div class="photoText">Resisdent Visa</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section7 -->
+  <div class="section7 container">
+    <div class="row">
+      <div class="section7-container col-12 col-md-6 col-lg-6">
+        <div class="section7_title">
+          <div class="whyChooseUs">WHY CHOOSE US</div>
+          <div class="BestImmigration">Best Immigration & Visa Consultations.</div>
+          <div class="smallWords">There are many variations of passages of Lorem Ipsum available, but the majory have
+            suffered alteration in some form, by simply free text available in injected humour, or randomised words.
+          </div>
+        </div>
+        <div class="section7_check">
+          <div class="row">
+            <div class="col-12 col-md-6 d-flex">
+              <div><i class="fa-solid fa-check check-icon2"></i></div>
+              <div class="check-words">Lorem ipsum gen on tend.</div>
+            </div>
+            <div class="col-12 col-md-6 d-flex">
+              <div><i class="fa-solid fa-check check-icon2"></i></div>
+              <div class="check-words">Lorem ipsum gen on tend.</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6 d-flex">
+              <div><i class="fa-solid fa-check check-icon2"></i></div>
+              <div class="check-words">Lorem ipsum gen on tend.</div>
+            </div>
+            <div class="col-12 col-md-6 d-flex">
+              <div><i class="fa-solid fa-check check-icon2"></i></div>
+              <div class="check-words">Lorem ipsum gen on tend.</div>
+            </div>
+          </div>
+        </div>
+        <div class="explore-btn">
+          <a href="">EXPLORE NOW</a>
+        </div>
+      </div>
+      <div class="section7-container col-12 col-md-6 col-lg-6 d-md-flex">
+        <img src="./images/paasport.jpg" class="section7-img">
+      </div>
+      <div class="workdays d-flex flex-column justify-content-around">
+        <div class="workdays-icon icon icon-Profile"></div>
+        <div class="workdays-numbers">1,45000</div>
+        <div class="workdays-text">We Process <br> Clients Visa’s <br> only in 20 Days</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section8 -->
+  <div class="section8 container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-5">
+        <div class="row red-item">
+          <div class="col-4">
+            <img src="./images/processing.png">
+          </div>
+          <div class="col-8">
+            <div class="little-title">Faster Processing</div>
+            <div class="little-words">Lorem ipsum is simply free
+              dolor sit amet.</div>
+          </div>
+        </div>
+        <div class="row red-item">
+          <div class="col-4">
+            <img src="./images/reduce-cost.png">
+          </div>
+          <div class="col-8">
+            <div class="little-title">Cost-Effective</div>
+            <div class="little-words">Lorem ipsum is simply free
+              dolor sit amet.</div>
+          </div>
+        </div>
+        <div class="row red-item">
+          <div class="col-4">
+            <img src="./images/customer-care.png">
+          </div>
+          <div class="col-8">
+            <div class="little-title">Visa Assistance</div>
+            <div class="little-words">Lorem ipsum is simply free
+              dolor sit amet.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-7 blue-area">
+        <div class="section8-words">
+          <div class="gray-words">COUNTRIES WE OFFER</div>
+          <div class="giant-words">Visio Provides Services that Our Client Requires.</div>
+          <div class="medium-words">Lorem ipsum dolor sit amet, conse ctetur adipisicing elit sed do eiusm od tempor ut
+            labore. Many desktop publishing packages and wpage editors now use Lorem Ipsum as their defamodel text.
+          </div>
+        </div>
+        <div class="section8-img">
+          <img src="./images/flag.jpg">
+        </div>
+        <div class="blue-passport">
+          <img src="./images/passport-1.png">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section9 -->
+  <div class="section9 container-fluid">
+    <div>
+      <div class="whatWeOffer">WHAT DO WE OFFER</div>
+      <div class="whatWeOfferInfo">
+        Get the Immigration <br>
+        Trainings you Deserve.
+      </div>
+    </div>
+    <div>
+      <div class="section9-img row">
+        <div class="col-12 col-md-6 col-lg-4 card-container">
+          <div class="card-img">
+            <img src="./images/ielts.jpg">
+          </div>
+          <div class="card-info d-flex flex-column justify-content-evenly">
+            <div class="card-title">Take IELTS</div>
+            <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+            <div class="card-btn all-center "><a href="">LEARN MORE</a></div>
+          </div>
+        </div>
+        <!-- ***************************************************************************************** -->
+        <div class="col-12 col-md-6 col-lg-4 card-container">
+          <div class="card-img">
+            <img src="./images/pte-coaching.jpg">
+          </div>
+          <div class="card-info d-flex flex-column justify-content-evenly">
+            <div class="card-title">PTE Coaching</div>
+            <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+            <div class="card-btn all-center "><a href="">LEARN MORE</a></div>
+          </div>
+        </div>
+        <!-- ***************************************************************************************** -->
+        <div class="col-12 col-lg-4 card-container">
+          <div class="card-img">
+            <img src="./images/toefl.jpg">
+          </div>
+          <div class="card-info d-flex flex-column justify-content-evenly">
+            <div class="card-title">TOEFL Coaching</div>
+            <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+            <div class="card-btn all-center "><a href="">LEARN MORE</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section10 -->
+  <div class="section10">
+    <div>
+      <div class="whatWeOffer">OUR WORK PROCESS</div>
+      <div class="whatWeOfferInfo">
+        Get your Visa Approved in <br>
+        4 Simple Steps.
+      </div>
+    </div>
+
+    <div class="four-steps row">
+      <div class="col-12 col-lg-3">
+        <div class="step">
+          <div class="step-icon">
+            <img src="./images/interview.png">
+          </div>
+          <div class="step-title">Interview</div>
+          <div class="step-text">Lorem Ipsum is simply dummy text of the new des printing and type.</div>
+          <div class="step-circle">01</div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3">
+        <div class="step">
+          <div class="step-icon">
+            <img src="./images/filling-form.png">
+          </div>
+          <div class="step-title">Fill Form</div>
+          <div class="step-text">Lorem Ipsum is simply dummy text of the new des printing and type.</div>
+          <div class="step-circle">02</div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3">
+        <div class="step">
+          <div class="step-icon">
+            <img src="./images/interview.png">
+          </div>
+          <div class="step-title">Documentation</div>
+          <div class="step-text">Lorem Ipsum is simply dummy text of the new des printing and type.</div>
+          <div class="step-circle">03</div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-3">
+        <div class="step">
+          <div class="step-icon">
+            <img src="./images/interview.png">
+          </div>
+          <div class="step-title">Get Visa</div>
+          <div class="step-text">Lorem Ipsum is simply dummy text of the new des printing and type.</div>
+          <div class="step-circle">04</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- section11 -->
+  <div class="section11 container-fluid ">
+    <div class="row flex-md-row">
+      <div class="col-12 col-md-4">
+        <div>
+          <div class="OurTerminal">OUR TESTIMONIALS</div>
+          <div class="whatTheyTalk">
+            What They are Talking About Company.
+          </div>
+          <div class="whatWeOfferText">
+            Lorem ipsum dolor sit amet, conse ctetur adipisicing elit sed do eiusm od tempor ut labore. Many desktop
+            publishing packages and wpage editors now use Lorem Ipsum as their defamodel text.
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 rate-card">
+        <div class="icon icon-quote comma-icon"></div>
+        <div class="comma-text">
+          Lorem ipsum dolor sit amet, conse ctetur adipisicing elit sed do eiusm od tempor ut
+          labore. Many desktop publishing packages and wpage editors now use Lorem Ipsum as their defamodel text.
+        </div>
+        <div class="rate-star">
+          <div class="star">
+            <i class="fa-solid fa-star star-icon"></i>
+            <i class="fa-solid fa-star star-icon"></i>
+            <i class="fa-solid fa-star star-icon"></i>
+            <i class="fa-solid fa-star star-icon"></i>
+            <i class="fa-solid fa-star star-icon"></i>
+          </div>
+        </div>
+        <div class="client-img">
+          <img src="./images/student-visa.jpg">
+        </div>
+        <div class="client-name">Client Name</div>
+      </div>
+      <div class="col-12 col-md-4 rate-card">
+        <div class="icon icon-quote comma-icon"></div>
+        <div class="comma-text">
+          Lorem ipsum dolor sit amet, conse ctetur adipisicing elit sed do eiusm od tempor ut
+          labore. Many desktop publishing packages and wpage editors now use Lorem Ipsum as their defamodel text.
+        </div>
+        <div class="rate-star">
+          <div class="star">
+            <i class="fa-solid fa-star star-icon"></i>
+            <i class="fa-solid fa-star star-icon"></i>
+            <i class="fa-solid fa-star star-icon"></i>
+            <i class="fa-solid fa-star star-icon"></i>
+            <i class="fa-solid fa-star star-icon"></i>
+          </div>
+        </div>
+        <div class="client-img">
+          <img src="./images/student-visa.jpg">
+        </div>
+        <div class="client-name">Client Name</div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="footer">
+    <div class="row">
+      <div class="col-12 col-md-3 mb-5">
+        <div class="footer-title">Contact</div>
+        <div class="footer-item">82 Forest Avenue, New York, USA, 10010</div>
+        <div class="d-md-flex mt-md-5">
+          <div class="icon-background"><i class="fa-solid fa-envelope icon-self"></i></div>
+          <div class="information">hello@domain.com</div>
+        </div>
+        <div class="d-md-flex">
+          <div class="icon-background"><i class="fa-solid fa-phone icon-self"></i></div>
+          <div class="information">+1-202-555-0170</div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3 mb-5">
+        <div class="footer-title">Explore</div>
+        <div class="footer-item">About Company</div>
+        <div class="footer-item">Meet the Team</div>
+        <div class="footer-item">News & Media</div>
+        <div class="footer-item">Our Projects</div>
+        <div class="footer-item">Contact</div>
+      </div>
+      <div class="col-12 col-md-3 mb-5">
+        <div class="footer-title">Visa</div>
+        <div class="footer-item">Student Visa</div>
+        <div class="footer-item">Business Visa</div>
+        <div class="footer-item">Family Visa</div>
+        <div class="footer-item">Travel Visa</div>
+        <div class="footer-item">Work Visa</div>
+      </div>
+      <div class="col-12 col-md-3 mb-5">
+        <div class="footer-title">Services</div>
+        <div class="footer-item">PR Application</div>
+        <div class="footer-item">Visa Consultancy</div>
+        <div class="footer-item">Travel Insurance</div>
+        <div class="footer-item">Work Permits</div>
+        <div class="footer-item">Abroad Study</div>
+      </div>
+    </div>
+    <hr class="horizon">
+    <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-center">
+      <div class="copy-right mt-4">© Copyright 2023 by Visio</div>
+      <div class="media-icons d-flex mt-4">
+        <div class="media-icons-bg mx-1"><i class="fa-brands fa-facebook"></i></div>
+        <div class="media-icons-bg mx-1"><i class="fa-brands fa-twitter"></i></div>
+        <div class="media-icons-bg mx-1"><i class="fa-brands fa-youtube"></i></div>
+        <div class="media-icons-bg mx-1"><i class="fa-brands fa-linkedin-in"></i></div>
+        <div class="media-icons-bg mx-1"><i class="fa-brands fa-instagram"></i></div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>
